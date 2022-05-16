@@ -25,7 +25,7 @@ export default function Detail({params}) {
         <Seo title={title} />
         <div className="card__inner">
             <div className="card__image">
-                <img src={`https://image.tmdb.org/t/p/w500/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg`} alt={title} />
+                <img src={`https://image.tmdb.org/t/p/w500/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg`} alt={title} /> {/*임의의 사진 링크*/}
             </div>
         </div>
         <div className="content__group">
@@ -50,6 +50,7 @@ export default function Detail({params}) {
         }
         .content__heading {
             font-size: 42px;
+            color:pink;
           }
         .content__group {
             width:50vw;
