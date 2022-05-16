@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 import Seo from "../../components/Seo";
 
 export default function Detail({params}) {
-    const [title, id] = params || [];
-    const [movies, setMovies] = useState();
-    useEffect(() => {
+    const [title, id] = params || []; //getServerSideProps으로 params 받아옴. title, id 뜨는거 확인 함
+    const [movies, setMovies] = useState(); //useState 이용해서 api json 받을 함수 선언
+    useEffect(() => { //api fetch
       (async () => {
-        const { results } = await (await fetch(`/api/movies/675353`)).json();
-        setMovies(results);
+        const { results } = await (await fetch(`/api/movies/675353`)).json(); //원래는 끝애 ${id}(18번 줄 참고)로 썼는데 아무리해도 안먹히길래 직접 아이디까지 써서 fetch 해봤으나 fetch가 안됨
+        setMovies(results); //fetch한 object movies에 넣기
       })();
     }, []);
-    console.log(movies);
+    console.log(movies); //콘솔창에 undefined라고 나옴
     // const [details, setDetails] = useState();
     // useEffect(() => {
     //   (async () => {
