@@ -22,19 +22,19 @@ export default function Detail({params}) {
     // }, []);
     // console.log(details);
     return <div className="card">
-        {/* <Seo title={details.name} />
+        <Seo title={title} />
         <div className="card__inner">
             <div className="card__image">
-                <img src={`https://image.tmdb.org/t/p/w500/${details.belongs_to_collection.poster_path}`} alt={title} />
+                <img src={`https://image.tmdb.org/t/p/w500/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg`} alt={title} />
             </div>
         </div>
         <div className="content__group">
-            <p className="content__heading">The Fountain</p>
+            <p className="content__heading">{title}</p>
             <p className="content__category">Science Fiction</p>
             <p className="content__description">
                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.
             </p>
-        </div> */}
+        </div>
         <style jsx>{`
         img {
             top: 0;
