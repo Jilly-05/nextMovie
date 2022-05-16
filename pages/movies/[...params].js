@@ -29,9 +29,9 @@ export default function Detail({params}) {
             </div>
         </div>
         <div className="content__group">
-            <p className="content__heading">{title}</p>
-            <p className="content__category">Science Fiction</p>
-            <p className="content__description">
+            <p className="content__heading">{title}</p> {/* params로 받아온 title */}
+            <p className="content__category">Science Fiction</p> {/* api 받아오면 map으로 장르 찍어낼 예정 */}
+            <p className="content__description"> {/* api 받아요면 overview에서 받아오기 */}
                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.
             </p>
         </div>
